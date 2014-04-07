@@ -7,7 +7,7 @@ body {
   color: #444;
   background-color: #f5f5f5;
 }
-h1 {
+h2 {
   font-family: 'Noto Serif', serif;
   font-size: 2em;
   text-align: center;
@@ -25,24 +25,40 @@ a {
 
 /*header*/
 
+header p {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+h1.name {
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+h1 {
+  width: 21%;
+  margin: 0 auto;
+}
 #main-nav li {
   display: inline-block;
 }
 .button-left,
 .button-right {
-  background-color: #eb635e;
-  width: 80px;
-  height: 15px;
-  padding: 1em;
   text-align: center;
 }
 .button-right {
   float: right;
 }
-.name {
-  font-size: 1.7em;
-  margin-left: 30%;
-  text-transform: uppercase;
+.button-left a,
+.button-right a {
+  background-color: #eb635e;
+  padding-top: 1em;
+  width: 120px;
+  height: 40px;
+  display: block;
+}
+.button-left a:hover,
+.button-right a:hover{
+  background-color: #5CBDBD;
 }
 #main-nav p {
   margin-left: 42%;
@@ -50,26 +66,37 @@ a {
 }
 
 /*content*/
-
+.container-left a:hover {
+  opacity: 0.9;
+}
+.github-icon {
+  margin: 0 auto;
+  color:#444;
+  font-size: 0.7em;
+  text-align: center;
+    
+}
+.github-icon img{
+    padding-right: 6px;
+}
+.container-right,
 .container-left {
   width: 47%;
-  height: 400px; /*CHEQUEAR*/
-  float: left;  
+  height: 400px; 
   margin-top: 4em;
-  background-color: yellow;
+}
+.container-left {
+  float: left;   
 }
 .container-left img {
-  width: 100%;
+  height: 100%;
 }
 .container-right {
-  width: 47%;
-  height: 400px; /*CHEQUEAR*/
   background-color: white;
-  float: right;
-  margin-top: 4em;
+  float: right; 
 }
 .container-right p {
-  margin: 4.5em;
+  margin: 3em 4.5em;
   line-height: 1.5em;
   text-align: center;
 }
@@ -85,7 +112,7 @@ a {
   color: white;
   line-height: 1.5em;
   text-align: center;
-  margin: 1em 10em;
+  margin: 0 10em;
 }
 #about-img {
   margin-bottom: 30px;
@@ -93,7 +120,7 @@ a {
   box-shadow: 0px 0px 0px 10px #FFF, 0px 0px 0px 11px #BBB; 
   margin: 5% 41%;
 }
-h1.about  {
+h2.about  {
   color: white;
 }
 .wrapper-contact {
@@ -106,6 +133,9 @@ h1.about  {
    margin: 3em 0;
    text-align: center;
 }
+
+/*footer*/ 
+
 .wrapper-contact p {
   font-size: 1.1em;
   color: white;
@@ -141,10 +171,26 @@ li.github {
 li.instagram { 
   background-position: 112px 0; 
 }
-li.skype { 
+li.twitter { 
   background-position: 50px 0; 
 }
 
 
-
-
+/* Media Queries */
+@media screen and (max-width: 974px) {
+  .container-right,
+  .container-left {
+    float: none;
+    width: 100%;
+  }
+  .container-left img {
+    width: 100%;
+    height: auto;     
+  }
+  .container-right {
+    padding-top: 3em;
+  }
+  .container-left {
+    height: auto;   
+  }
+} 
