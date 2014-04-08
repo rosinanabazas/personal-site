@@ -27,7 +27,7 @@ a {
 
 header p {
   text-align: center;
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 h1.name {
@@ -105,7 +105,6 @@ h1 {
   margin-top: 2em;
   width: 100%;
   background-color: #eb635e;
-  margin: 0 auto;
 }
 .wrapper-about p {
   font-size: 1.1em;
@@ -118,8 +117,8 @@ h1 {
   margin-bottom: 30px;
   border-radius: 50%;
   box-shadow: 0px 0px 0px 10px #FFF, 0px 0px 0px 11px #BBB; 
-  margin: 5% 41%;
 }
+
 h2.about {
   color: white;
 }
@@ -192,5 +191,38 @@ li.twitter {
   }
   .container-left {
     height: auto;   
+  }
+} 
+
+@media screen and (max-width: 508px) {
+  .container-right,
+  .container-left {
+    float: none;
+    width: 100%;
+    margin: 1.7em 0;
+  }
+  .container-left img {
+    width: 100%;
+    height: auto;     
+  }
+  .container-right {
+    padding-top: 3em;
+  }
+  .container-left {
+    height: auto;   
+  }
+  h1 {
+    padding-top: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+  nav p {
+    text-align: center;
+  }
+  .container-right p {
+    margin: 1.5em 1.5em;
+  }
+  h2 {
+    margin-top: 0;
   }
 } 
