@@ -116,6 +116,7 @@ header p {
 }
 .container-left img {
   height: 100%;
+  width: 100%;
 }
 .container-right {
   background-color: white;
@@ -218,12 +219,21 @@ li.twitter {
   }
 } 
 
-@media screen and (max-width: 508px) {
+/*Media QUeries*/
+
+@media screen and (max-width: 974px) {
+  header h1,
+  header p {
+    position: static;
+    width: 100%;
+  }
+  nav {
+    margin-bottom: 1.3em;
+  }
   .container-right,
   .container-left {
     float: none;
     width: 100%;
-    margin: 1.7em 0;
   }
   .container-left img {
     width: 100%;
