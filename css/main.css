@@ -14,8 +14,14 @@ h2 {
   margin-top: 2em;
 }
 a {
- text-decoration: none;
- color: white
+  text-decoration: none;
+  color: white
+}
+.wrapper a {
+  color: #444;
+}
+#main-nav a {
+  color: white;
 }
 .wrapper {
   width: 90%;
